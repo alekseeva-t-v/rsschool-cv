@@ -1,11 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/ico/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="header__nav">
+        <div class="header__nav__list">
+          <input type="checkbox" id="checkbox-toggle">
+          <label class="header__nav__hamburger" for="checkbox-toggle"
+            ><span class="header__nav__hamburger-line"></span
+          ></label>
+          <ul class="header__nav__menu">
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#summary">Summary</a>
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll"
+               href="#contacts">Contacts</a
+              >
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#code">Code</a>
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#skills">Skills</a>
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#courses">Courses</a>
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#education"
+                >Education</a
+              >
+            </li>
+
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link js-scroll" href="#languages"
+                >Languages</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__content">
+        <h1 class="header__title">Tatyana Alekseeva</h1>
+        <p class="header__subtitle">Junior Front-end Developer</p>
+        <a class="header__arrow" href="#summary">
+          <img src="./assets/svg/chevron-down.svg" alt="Arrow">
+        </a>
+      </div>
+    </header>
+
+    <!-- / HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="container main__container">
+
+        <section class="section section__summary" id="summary">
+          <h2 class="section__title section__summary__title">Summary</h2>
+          <div class="section__summary__content">
+            <img
+              class="main__avatar"
+              src="./assets/img/avatar.jpg"
+              alt="Avatar">
+            <p>
+              I know how to work with large corporate and VIP clients, resolve
+              conflicts, find a compromise and find a way out of difficult
+              situations. I like to participate in the processes of training,
+              adaptation of staff and myself to learn new things, to develop. I
+              work well in a team. I am willing to take on new projects and see
+              things through to the end.<br><br>
+              The immediate goal is to take the first steps towards learning and
+              working in the field of FRONTEND development.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section__contacts" id="contacts">
+          <h2 class="section__title section__contacts__title">Contacts</h2>
+          <ul class="section__list">
+            <li class="section__contacts__iteam address">Tula, Russia</li>
+            <li class="section__contacts__iteam email">
+              Email:
+              <a href="mailto:alekseeva.tatiana.vi@gmail.com" target="_blank"
+                >alekseeva.tatiana.vi@gmail.com</a
+              >
+            </li>
+            <li class="section__contacts__iteam github">
+              GitHub:
+              <a href="https://github.com/alekseeva-t-v" target="_blank"
+                >alekseeva-t-v</a
+              >
+            </li>
+            <li class="section__contacts__iteam telegram">
+              Telegram:
+              <a href="https://t.me/alekseeva_tatiana_vi" target="_blank"
+                >@alekseeva_tatiana_vi</a
+              >
+            </li>
+            <li class="section__contacts__iteam discord">
+              Discord:
+              <a
+                href="https://discordapp.com/users/999628349792071682/"
+                target="_blank"
+                >Tatyana Alekseeva#9324</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="section section__code" id="code">
+          <h2 class="section__title section__code__title">Code</h2>
+          <div class="code">
+            <pre>
+  <code>
+  function finalGrade(exam, projects) {
+    if (exam > 90 || projects > 10) return 100;
+    if (exam > 75 && projects >= 5) return 90;
+    if (exam > 50 && projects >= 2) return 75;
+    return 0;
+  } </code>
+            </pre>
+          </div>
+        </section>
+
+        <section class="section section__scills" id="skills">
+          <h2 class="section__title section__scills__title">Skills</h2>
+          <ul class="section__list">
+            <li class="section__iteam">
+              Web-development:
+              <span class="description">HTML5, CSS3, JavaScript</span>
+            </li>
+            <li class="section__iteam">
+              Version control: <span class="description">GIT, Github</span>
+            </li>
+            <li class="section__iteam">
+              Graphics: <span class="description">Adobe Photoshop, Figma</span>
+            </li>
+            <li class="section__iteam">
+              Editors:
+              <span class="description">Brackets, Sublime, VSCode</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section section__courses" id="courses">
+          <h2 class="section__title section__courses__title">Courses</h2>
+          <ul class="section__list">
+            <li class="section__iteam">
+              Netology -
+              <span class="description">Website layout basics</span> (<a
+                href="./assets/docs/NETOLOGY-Website_layout_basics.pdf"
+                target="_blank"
+                >сертификат</a
+              >)
+            </li>
+            <li class="section__iteam">
+              Netology -
+              <span class="description">First steps in JavaScript</span> (
+              <a
+                href="./assets/docs/NETOLOGY-First_steps_in_JavaScript.pdf"
+                target="_blank"
+                >сертификат</a
+              >)
+            </li>
+            <li class="section__iteam">
+              Result.School - <span class="description">HTML & CSS</span> (
+              <a href="./assets/docs/RESULT.SCHOOL-HTML&CSS.pdf" target="_blank"
+                >сертификат</a
+              >)
+            </li>
+            <li class="section__iteam">
+              WAYUP -
+              <span class="description"
+                >Web Layout Designer. Getting Started</span
+              >
+              (
+              <a
+                href="./assets/docs/WAYUP-Web_Layout_Designer.Getting_Started.pdf"
+                target="_blank"
+                >сертификат</a
+              >)
+            </li>
+            <li class="section__iteam">
+              WAYUP -
+              <span class="description">Web Designer. Explosive Startr</span> (
+              <a
+                href="./assets/docs/WAYUP-Web_Designer.Explosive_Startr.pdf"
+                target="_blank"
+                >сертификат</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="section section__education" id="education">
+          <h2 class="section__title section__education__title">Education</h2>
+          <p>
+            <span class="date">2003 - 2009</span> Institute of Finance and
+            Economics
+          </p>
+          <p>Faculty: <span class="description">Marketing</span></p>
+        </section>
+
+        <section class="section section__projects" id="projects">
+          <h2 class="section__title section__projects__title">Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/countdown-start/"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./assets/img/countdown-start.jpg"
+                  alt="Countdown to New Year">
+                <h3 class="project__title">Countdown to New Year</h3>
+                <p class="project__text">
+                  Page with a countdown timer to the event.
+                </p>
+              </a>
+            </article>
+
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/cards-sources/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/cards-sources.JPG"
+                  class="project__img"
+                  alt="Gallery of cards">
+                <h3 class="project__title">Gallery of cards</h3>
+                <p class="project__text">Popup card plugin.</p>
+              </a>
+            </article>
+
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/drag-drop/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/drag&drop.JPG"
+                  class="project__img"
+                  alt="Drag & Drop">
+                <h3 class="project__title">Drag & Drop</h3>
+                <p class="project__text">A mini clone of Trello.</p>
+              </a>
+            </article>
+
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/slider/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/slider.JPG"
+                  class="project__img"
+                  alt="screenshot">
+                <h3 class="project__title">Image Slider</h3>
+                <p class="project__text">Impressive image slider.</p>
+              </a>
+            </article>
+
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/hover-board/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/hover-board.JPG"
+                  class="project__img"
+                  alt="screenshot">
+                <h3 class="project__title">Hover board</h3>
+                <p class="project__text">
+                  Visual mini-game with dynamic content generation.
+                </p>
+              </a>
+            </article>
+            <article class="project">
+              <a
+                class="project__linc"
+                href="https://alekseeva-t-v.github.io/aim-game/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/aim-game.JPG"
+                  class="project__img"
+                  alt="screenshot">
+
+                <h3 class="project__title">AIM Game</h3>
+                <p class="project__text">Game "Aim Game" with 3 screens.</p>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section__experience" id="experience">
+          <h2 class="section__title section__experience__title">Experience</h2>
+          <p><span class="date">2018 - present</span> MegaFon:</p>
+          <p class="description">
+            Sales Specialist in the Department of Federal Telemarketing.
+          </p>
+          <p><span class="date">2009 - 2018</span> ANKOR HR Solutions:</p>
+          <p class="description">Customer Service Specialist, Mentor.</p>
+        </section>
+
+        <section class="section section__languages" id="languages">
+          <h2 class="section__title section__languages__title">Languages</h2>
+          <ul class="section__list">
+            <li class="section__iteam">Russian: <span class="description">Native</span></li>
+            <li class="section__iteam">English: <span class="description">Elementary</span> </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!-- / MAIN ! -->
+
+    <!-- FOOTER ! -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <span class="footer__copyright">© 2022 AlekseevaTatyana</span>
+          <a href="https://github.com/alekseeva-t-v" target="_blank"><img src="./assets/img/git-logo.png" class="git-logo" alt="Logotip GitHub"></a>
+        </div>
+        <div class="footer__link">
+          <a href="https://rs.school/js-stage0/" target="_blank"><img class="rs-logo" src="./assets/img/rs-logo.png" alt="Logotip rs school"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- / FOOTER  -->
+
+    <script src="./assets/libraries/jquery-3.6.1.min.js"></script>
+    <script src="./assets/libraries/vide/jquery.vide.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
